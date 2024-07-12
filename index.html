@@ -1,0 +1,240 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Kuvvat Gullekov</title>
+<style type="text/css">
+.ust_banner {
+	background-color: #090;
+	height: 250px;
+	width: 750px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#en_ust {
+	height: 17px;
+	width: 750px;
+	margin-right: auto;
+	margin-bottom: 2px;
+	margin-left: auto;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 12px;
+	color: #000;
+}
+#menu {
+	width: 750px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 10px;
+	height: 150px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 12px;
+	font-weight: bold;
+}
+#menu_sol {
+	float: left;
+	width: 500px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 12px;
+	color: #000;
+}
+#menu_sag {
+	float: right;
+	height: 120px;
+	width: 180px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 12px;
+	color: #000;
+}
+#menu #menu_sol ul {
+	display: inline-block;
+}
+#menu #menu_sol ul li a {
+	display: inline;
+	text-decoration: none;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 14px;
+	color: #000;
+	font-weight: bold;
+}
+#menu #menu_sol ul li a:hover {
+	background-color: #000;
+	color: #FFF;
+	padding: 4px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 14px;
+	font-weight: bold;
+}
+#en_ust a {
+	text-decoration: none;
+	color: #000;
+}
+#en_ust a:hover {
+	background-color: #00F;
+}
+#menu #menu_sol ul li {
+	display: block;
+}
+#icerik {
+	width: 750px;
+	margin-right: auto;
+	margin-left: auto;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 12px;
+	color: #000;
+	margin-top: 10px;
+}
+#menu #menu_sol p a {
+	text-decoration: none;
+	color: #000;
+}
+#alt {
+	width: 750px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 12px;
+	color: #FFF;
+	background-color: #000;
+	padding: 3px;
+}
+#dil {
+	background-color: #096;
+	float: right;
+	height: 20px;
+	width: 100px;
+}
+</style>
+<script src="SpryAssets/SpryValidationPassword.js" type="text/javascript"></script>
+<link href="SpryAssets/SpryValidationPassword.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <!-- use jssor.slider.mini.js (40KB) instead for release -->
+    <!-- jssor.slider.mini.js = (jssor.js + jssor.slider.js) -->
+<script type="text/javascript" src="js/jssor.js"></script>
+<script type="text/javascript" src="js/jssor.slider.js"></script>
+<script>
+        jQuery(document).ready(function ($) {
+            var options = {
+                $DragOrientation: 3,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
+                $ArrowNavigatorOptions: {                       //[Optional] Options to specify and enable arrow navigator or not
+                    $Class: $JssorArrowNavigator$,              //[Requried] Class to create arrow navigator instance
+                    $ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+                    $AutoCenter: 0,                                 //[Optional] Auto center arrows in parent container, 0 No, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
+                    $Steps: 1                                       //[Optional] Steps to go for each navigation request, default value is 1
+                }
+            };
+
+            var jssor_slider1 = new $JssorSlider$("slider1_container", options);
+        });
+    </script>
+<div id="en_ust" align="right"><a href="index.html">TR</a> / <a href="en/index.html">EN</a></div>
+<div class="ust_banner" id="ust">
+  <div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 750px;
+        height: 250px; ">
+        <!-- Slides Container -->
+        <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 750px; height: 250px; overflow: hidden;">
+          <div><img u="image" src="img/photography/resim1_edit.jpg" /></div>
+          <div><img u="image" src="img/photography/resim5.jpg" /></div>
+          <div><img u="image" src="img/photography/resim3.jpg" /></div>
+          <div><img u="image" src="img/photography/resim4.jpg" /></div>
+          <div><img u="image" src="img/photography/resim2.jpg" /></div>
+          
+        </div>
+        <!--#region Arrow Navigator Skin Begin -->
+        <!-- Help: http://www.jssor.com/development/slider-with-arrow-navigator-jquery.html -->
+    <style>
+            /* jssor slider arrow navigator skin 03 css */
+            /*
+            .jssora03l                  (normal)
+            .jssora03r                  (normal)
+            .jssora03l:hover            (normal mouseover)
+            .jssora03r:hover            (normal mouseover)
+            .jssora03l.jssora03ldn      (mousedown)
+            .jssora03r.jssora03rdn      (mousedown)
+            */
+            .jssora03l, .jssora03r {
+                display: block;
+                position: absolute;
+                /* size of arrow element */
+                width: 55px;
+                height: 55px;
+                cursor: pointer;
+                background: url(img/a03.png) no-repeat;
+                overflow: hidden;
+            }
+            .jssora03l { background-position: -3px -33px; }
+            .jssora03r { background-position: -63px -33px; }
+            .jssora03l:hover { background-position: -123px -33px; }
+            .jssora03r:hover { background-position: -183px -33px; }
+            .jssora03l.jssora03ldn { background-position: -243px -33px; }
+            .jssora03r.jssora03rdn { background-position: -303px -33px; }
+        </style>
+    <!-- Arrow Left -->
+    <span u="arrowleft" class="jssora03l" style="top: 123px; left: 8px;"> </span>
+    <!-- Arrow Right -->
+    <span u="arrowright" class="jssora03r" style="top: 123px; right: 8px;"> </span>
+    <!--#endregion Arrow Navigator Skin End -->
+    <a style="display: none" href="http://www.jssor.com">Bootstrap Slider</a> </div>
+</div>
+<div id="menu">
+  <div id="menu_sol">
+    <ul>
+      <li><a href="index.html">ANASAYFA</a> <a href="galeri.html">&nbsp;&nbsp;GALERİ&nbsp;&nbsp;</a> <a href="duyurular.html">DUYURULAR</a>  <a href="iletisim.html">&nbsp;&nbsp;İLETİŞİM </a></li>
+    </ul>
+    
+    <p><strong>Site İçi Arama</strong><br />
+      <input name="arama" type="text" id="arama" value="" />
+      <label for="arama"></label><input type="submit" name="ara" id="ara" value="Ara" />
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/photography/resim_sosyal_medya.jpg" width="192" height="32" border="0" usemap="#Map" />
+      <map name="Map" id="Map">
+        <area shape="rect" coords="1,-2,31,30" href="http://www.facebook.com/sharer/sharer.php" target="_blank" />
+        <area shape="rect" coords="41,0,73,32" href="https://twitter.com/intent/tweet?" target="_blank" />
+        <area shape="rect" coords="122,4,151,29" href="https://plus.google.com/share?" target="_blank" />
+        <area shape="rect" coords="80,2,111,30" href="https://www.blogger.com/home" target="_blank" />
+        <area shape="rect" coords="162,4,190,28" href="http://www.instagram.com" target="_blank" />
+      </map>
+      <br />
+      <br />
+      <a href="index.html">ANASAYFA</a> -&gt; <br />
+      
+  </p></div>
+  <div id="menu_sag"><strong>KULLANICI GİRİŞİ</strong><br />
+    Kullanıcı Adı: 
+    <form id="form1" name="form1" method="post" action="">
+      <input type="text" name="user" id="user" />
+      <label for="user"></label>
+      <br />
+      Şifre:<br />
+      <span id="sprypassword1">
+      <input type="password" name="pass" id="pass" />
+      <label for="pass"></label>
+      <span class="passwordRequiredMsg">Sifreyi bos birakmayin!</span></span>
+      <br />
+      <input type="submit" name="ok" id="ok" value="Gonder" />
+    </form>
+    <br />
+  </div>
+</div>
+<div id="icerik">
+  <p>Ben Kuvvat Gullekov, </p>
+  <p>Web Siteme Hoşgeldiniz. Websitemde galeride benim hoşuma giden görselleri paylaşacağım. Duyurulardan ise önemli gelişmeleri paylaşacağım. Bunun dışında iletişim sekmesinden iletişim adreslerim bulunabilir.</p>
+  <p>Bu sitede ayrıca her sayfayı paylaşmak için sosyal medya linkleri, site içi arama için arama butonu, kullanıcı girişi için formlar konulmuş ve ekstra olarak site için iki dil seçeneği sunulmuştur.</p>
+  <p>Sitede saydığım bütün fonksiyonlar henüz çalışır pozisyonda değildir. Bazı kısımlar test aşamasında olup düzgün çalışmayabilir. Herhangi eksik bir nokta farkederseniz İletişim sekmesinden bana ulaşıp feedbackde bulunabilirsiniz.</p>
+  <p>İyi Eğlenceleler.</p>
+  <p><img src="img/photography/resim_1.jpg" width="518" height="345" hspace="100" border="3" usemap="#Map2"/>
+    <map name="Map2" id="Map2">
+      <area shape="poly" coords="190,6,176,59,186,91,179,132,185,170,180,216,188,245,221,299,234,315,194,347,510,347,517,340,518,266,489,269,471,265,459,237,471,218,473,168,475,123,471,70,447,31,427,6" href="galeri.html" />
+    </map>
+  </p>
+</div>
+<div id="alt">Kuvvat Gullekov © 2015, İstanbul</div>
+<script type="text/javascript">
+var sprypassword1 = new Spry.Widget.ValidationPassword("sprypassword1");
+</script>
+</body>
+</html>
